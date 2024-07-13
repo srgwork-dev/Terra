@@ -14,15 +14,16 @@ The application layer includes:
 
 The blockchain layer consists of:
 
-- **Consensus Protocol**: Determines how agreement is reached among network participants (nodes) on the state of the blockchain.
+- **Consensus Protocol**: Determines how agreement is reached among network participants (nodes) regarding the state of the blockchain.
+
 - **Decentralized Ledger**: Stores all transactions, balances, and state changes of smart contracts in a distributed and immutable manner.
 
-### gun.js Integration
+- **gun.js Integration**: Utilizes gun.js for decentralized data storage and synchronization:
+  - **Data Storage**: Safely stores transactions, user data, and other information.
+  - **Real-time Sync**: Ensures data synchronization across nodes in real-time, improving system responsiveness.
 
-gun.js is used for decentralized data storage and synchronization:
+- **Cryptographic Security**: Ensures transaction security through encryption, digital signatures, and secure key management.
 
-- Provides a decentralized graph database where transactions and other data can be stored securely.
-- Offers features for real-time data synchronization across nodes, enhancing the responsiveness and scalability of the application.
 
 ### Secure Wallet
 
@@ -31,68 +32,15 @@ The secure wallet component:
 - Manages **Private Keys**: Essential for signing transactions securely and accessing blockchain assets.
 - Facilitates **Blockchain Interaction**: Sends transactions, checks balances, and manages assets on the blockchain network.
 
+
 ## Architecture Diagram
 
-+---------------------------------------------------------------+
-|                         Application                           |
-|                                                               |
-|  +---------------------------------------------------------+  |
-|  |                       Smart Contracts                  |  |
-|  |   (Business Logic, Automated Processes, etc.)          |  |
-|  +---------------------------------------------------------+  |
-|                                                               |
-+---------------------------------------------------------------+
-                         |
-                         | Interacts with
-                         v
-+---------------------------------------------------------------+
-|                         Blockchain                            |
-|                                                               |
-|  +---------------------------------------------------------+  |
-|  |                      Consensus Protocol                 |  |
-|  |  (Proof of Work, Proof of Stake, etc.)                  |  |
-|  +---------------------------------------------------------+  |
-|  |                      Decentralized Ledger               |  |
-|  |  (Stores Transactions, Balances, Smart Contract State)  |  |
-|  +---------------------------------------------------------+  |
-|                                                               |
-+---------------------------------------------------------------+
-                         |
-                         | Communicates with
-                         v
-+---------------------------------------------------------------+
-|                         gun.js                                |
-|                         (Decentralized Database)              |
-|                                                               |
-|  +---------------------------------------------------------+  |
-|  |                      Data Storage                       |  |
-|  |  (Stores Transactions, User Data, etc.)                 |  |
-|  +---------------------------------------------------------+  |
-|  |                      Real-time Sync                     |  |
-|  |  (Synchronizes Data Across Nodes)                       |  |
-|  +---------------------------------------------------------+  |
-|                                                               |
-+---------------------------------------------------------------+
-                         |
-                         | Interacts with
-                         v
-+---------------------------------------------------------------+
-|                         Secure Wallet                         |
-|                                                               |
-|  +---------------------------------------------------------+  |
-|  |                      Private Keys                        |  |
-|  |  (Secure Storage, Signing Transactions)                 |  |
-|  +---------------------------------------------------------+  |
-|  |                      Blockchain Interaction             |  |
-|  |  (Sends/Receives Transactions, Checks Balances)         |  |
-|  +---------------------------------------------------------+  |
-|                                                               |
-+---------------------------------------------------------------+
+![image](https://github.com/user-attachments/assets/16159faf-aee4-4d56-a9c2-e5f3d0903356)
+
 
 ## Usage
 
-This repository serves as a conceptual guide to understanding the architecture of a blockchain-based system with gun.js integration for decentralized data storage and synchronization. For practical implementation, refer to gun.js documentation and integrate with your preferred blockchain platform and wallet technologies.
-
+This repository serves as a conceptual guide to understanding the architecture of a blockchain-based system with gun.js integration for decentralized data storage and synchronization.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
